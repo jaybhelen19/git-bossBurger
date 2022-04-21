@@ -1,0 +1,42 @@
+/*variables*/
+:root{
+    --primary:#dac404;
+    --primaryhover:#dac5046e;
+}
+
+html, body{
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+}
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:120px calc(100vh - 120px) repeat(2, 100vh) 1fr;
+    font-family: "roboto", sans-serif;
+    background: #000;
+}
+ 
+/*---view port---*/
+
+/*desktop/laptop*/
+@media (max-width:1200px){
+  
+}
+/*Tablet*/
+@media (max-width:992px){
+    
+}
+/*Tablet/Mobile Large*/
+@media (max-width:768px){
+    
+}
+/*Mobile*/
+@media (max-width:576px){
+   

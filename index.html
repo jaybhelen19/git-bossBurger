@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BossBurger Website</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav-main">
+            <div class="logo-container">
+                <img src="./assets/home-logo.png">
+                <div class="hamburger-container" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span> 
+                </div>
+            </div> 
+            <ul class="menu-container" id="menus">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#product-section">Product</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><span></span></li>
+                <li><a href="#"><img src="./assets/home-cart-icon.png"></a></li>
+                <li><a href="#"><img src="./assets/home-admin-icon.png"></a></li>
+            </ul> 
+        </div>
+        <div class="home-section" id="home-section"> 
+            <div class="hero-main">
+                <div class="hero-text-container">
+                    <h1><span id="mouseover" class="mouseout">Boss</span> Burger</h1>
+                    <p>Awesome tales are like the best burgers: big, juicy, and messy.</p>
+                    <button id="btnalert">Order Now!</button>
+                </div>
+                <div class="hero-image-container">
+                    <img src="assets/home-hero-img.png">
+                </div>
+            </div>
+        </div>
+        <!--This is a product Section-->
+        <div class="product-section"  id="product-section">
+            <h2>START YOUR <span>ORDER TODAY</span></h2>
+            <div class="products-list">
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p> BbQ Burger Ingredients</p>
+                            <ul>
+                                <li>1 kg ground beef</li>
+                                <li>3 tbsp hickory bbq sauce</li>
+                                <li>1 medium onion (chopped into small pieces)</li>
+                                <li>2 cloves of garlic (chopped finely)</li>
+                                <li>1 tbsp salt</li>
+                                <li>1 tbsp black pepper</li>
+                                <li>To make burger</li>
+                                <li>12 burger buns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container">
+                        <div class="image-container">
+                            <img src="/assets/products-bbq-burger.png" alt="bbq burger">
+                            <p>BBQ <span>Burger</span> </p>
+                        </div>  
+                    </div>
+                    <div class="price-container">
+                        <p>PHP 120.00</p>
+                        <div class="image-container">
+                             <img src="/assets/products-cart-icon.png" alt="product=-cart-icon"> 
+                        </div> 
+                    </div>
+                </div>
+                <!--this is a 2nd burger-container-->
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p>Classic burger ingredients</p>
+                            <ul>
+                                <li>2 pounds of cold 80/20 ground beef</li>
+                                <li>4 cloves of minced garlic</li>
+                                <li>2 tablespoons of minced onion</li>
+                                <li>1 3/4 teaspoons of ground pepper</li>
+                                <li>1 tablespoon of Worcestershire sauce</li>
+                                <li>1 1/2 teaspoons of salt</li>
+                                <li>6 hamburger buns</li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container-2">
+                        <div class="image-container">
+                            <img src="/assets/products-classic-burger.png" alt="products-classic-burger">
+                            <p>Classic <span>Burger</span></p>
+                        </div>
+                    </div>
+                    <div class="price2-container">
+                        <p>PHP 87.00</p>
+                        <div class="image2-container">
+                            <img src="/assets/products-cart-icon.png" alt="cart-icon">
+                        </div>
+                    </div> 
+                </div>
+                <!---This is a 3rd burger-container-->
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p> Grill Burger Ingredients</p>
+                            <ul>
+                                <li>2 pounds (32 ounces) 80/20 ground beef</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>2 tablespoons minced onion</li>
+                                <li>1 tablespoon Worcestershire saucel</li>
+                                <li>1 3/4 teaspoons ground pepper.</li>
+                                <li>1 1/2 teaspoons salt.</li>
+                                <li>6 hamburger buns.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container-6">
+                        <div class="image6-container">
+                            <img src="/assets/products-grilled-burger.png" alt="grilled-burger">
+                            <p>Grilled <span>Burger</span></p>
+                        </div>
+                    </div>
+                    <div class="price6-container">
+                        <p>PHP 120</p>
+                        <div class="image6-container">
+                            <img src="/assets/products-cart-icon.png" alt="cart-icon">
+                        </div>
+                    </div>
+                </div>
+                  
+                <!---This is a 4th burger container-->
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p> Flamed Grilled Burger Ingredients</p>
+                            <ul>
+                                <li>5 kg premium beef mince</li>
+                                <li>6 burger buns</li>
+                                <li>1 large brown onion</li>
+                                <li>2 large tomatoes</li>
+                                <li>500g cheddar cheese block</li>
+                                <li>¼ small iceberg lettuce head.</li>
+                                <li>tomato relish</li>
+                                <li>mayonnaise</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container-4">
+                        <div class="image4-container">
+                            <img src="/assets/products-flame-grilled-burger.png" alt="flame grilled burger">
+                            <p>Flame Grilled <span>Burger</span></p>
+                        </div> 
+                    </div>
+                    <div class="price4-container">
+                        <p>PHP 145.00</p>
+                        <div class="image4-container">
+                            <img src="/assets/products-cart-icon.png" alt="cart-icon">
+                        </div>
+                    </div>
+                </div> 
+
+                <!---This is a 5th burger container-->
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p> Grill Burger Ingredients</p>
+                            <ul>
+                                <li>2 pounds (32 ounces) 80/20 ground beef</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>2 tablespoons minced onion</li>
+                                <li>1 tablespoon Worcestershire saucel</li>
+                                <li>1 3/4 teaspoons ground pepper.</li>
+                                <li>1 1/2 teaspoons salt.</li>
+                                <li>6 hamburger buns.</li>
+                                <li>Butter for buns.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container-5">
+                        <div class="image5-container">
+                            <img src="/assets/products-grill-burger.png" alt="Grill Burger">
+                            <p>Grill <span>Burger</span></p>
+                        </div>
+                    </div>
+                    <div class="price5-container">
+                        <p>PHP 135</p>
+                        <div class="image5-container">
+                            <img src="/assets/products-cart-icon.png" alt="product-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <!---This is a 6th burger container-->
+                <div class="product">
+                    <div class="hover-details">
+                        <div class="content-container">
+                            <p> Crispy Burger Ingredients</p>
+                            <ul>
+                                <li>3 pieces CDO Crispy Burger</li>
+                                <li>1 package spicy ramen</li>
+                                <li>2 tbsp. gochujang</li>
+                                <li>1 tbsp. sesame oil</li>
+                                <li>Black and white sesame seeds, for garnish</li>
+                                <li>1 tbsp. spring onions, for garnish</li>
+                                <li>To make burger</li>
+                                <li>12 burger buns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-container-3">
+                        <div class="image3-container">
+                            <img src="/assets/products-crispy-burger.png" alt="crisspy burger">
+                            <p>Crisspy <span>Burger</span></p>
+                        </div>
+                    </div>
+                    <div class="price3-container">
+                        <p>PHP 135.00</p>
+                         <div class="image3-container">
+                            <img src="/assets/products-cart-icon.png" alt="cart-icon">
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+        <!---contacts section-->
+        <div class="contacts-section" id="contact-section"> 
+            <h1><span>GET IN</span>TOUCH</h1>
+            <div class="contact-form">
+                <div class="image-container">
+                    <img src="/assets/contacts-bacon-burger.png" alt="contacts-bacon-burger">
+                </div>
+                <div class="form-container">
+                    <h2><span>Leave</span> us a message!</h2> 
+                    <form class="form-wrapper">
+                        <input type="text" placeholder="First Name"> 
+                        <input type="text" placeholder="Last Name">
+                        <input typ  e="text" placeholder="Phone">
+                        <input type="email" placeholder="Email"> 
+                        <textarea  class="textarea" placeholder="Message"></textarea>
+                        <button>Send Message</button>
+                    </form> 
+                </div>
+            </div>
+        </div>x
+
+        <!---Footer-section-->
+        <div class="footer-section">
+            <div class="content">
+                <div class="about-wrapper">
+                    <h2>About</h2>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <div class="logo-wrapper">
+                    <a href="#"><img src="./assets/home-logo.png" alt=" bossBruger logo"></a>
+                    <a href="#">www.bossBurger.com.ph</a>
+                </div>
+                <div class="contacts-wrapper">
+                    <div class="content-contact">
+                        <h2>contacts</h2>
+                        <p>(+63)905-063-7880</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <img src="./assets/footer-fb-icon.png" alt="fb icon">
+                        </div>
+                        <div class="icon-container">
+                            <img src="./assets/footer-youtube-icon.png" alt="fb icon">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="divider"> 
+                <p class="copyright">© 2022 Jayson Rabanes PH</p>
+            </div>
+        </div>
+    </div> 
+ <script type="text/javascript" src ="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./fnc.js"></script>
+
+
+</body>
+</html>

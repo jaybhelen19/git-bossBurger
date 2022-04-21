@@ -1,0 +1,138 @@
+/*variables*/
+:root{
+    --primary:#dac404;
+    --primaryhover:#dac5046e;
+}
+.main .nav-main{
+    margin: 0 100px;
+    display: flex;
+    height: 120px; 
+    align-items: center;  
+}
+.main .nav-main .logo-container{
+    flex: 1;
+    padding: 20px 0;
+    align-items: center;
+    cursor: pointer;
+
+}
+.main .nav-main .menu-container{
+    display: flex;
+    align-items: center;   
+}
+.main .nav-main .menu-container.show {
+   transform: scale(1,1);
+   transition: 0.5s;
+    
+}
+.main  .menu-container li a{
+    font-size: 18px;
+    margin:   0 20px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .menu-container li a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background:var(--primary);
+    transform: scale(0, 1);
+    transition: transform 200ms ease-in;
+}
+.main .menu-container li a:hover::after{
+    transform: scale(1, 1);
+}
+.main .menu-container li span{
+    display: block;
+    width: 1px;
+    height: 30px;
+    background:var(--primary);
+    margin-left: 0 20px; 
+}
+.main .menu-container li:nth-child(6) a::after,
+.main .menu-container li:nth-child(7) a::after{ 
+    all: unset;
+}
+.main .menu-container li:nth-child(5) a,
+.main  .menu-container li:nth-child(6) a{
+    margin-right: -3px;
+}
+ul{
+  padding: 20px 0;
+}  
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: 1px;
+}
+
+
+/*---view port---*/
+
+/*desktop/laptop*/
+@media (max-width:1200px){
+   
+}
+/*Tablet*/
+@media (max-width:992px){
+    .main .nav-main{
+        position: fixed;
+        width: 100%;
+        height: 120px;
+        margin: 0; 
+        display: grid; 
+        grid-template-rows: 120px; 
+    }
+    .main .nav-main .logo-container{
+     margin:0 100px;
+     display: flex; 
+     justify-content: space-between; 
+    }
+    .main .nav-main .menu-container li:hover{
+        background: var(--primary);
+    }
+    .main .nav-main .menu-container li a::after{
+       all: unset;
+    }
+   
+    .main .nav-main .hamburger-container span{ 
+        display: flex;
+        align-items: center;  
+        height: 3px;
+        width: 45px;
+        margin: 7px 0;
+        background:#fff;
+    }
+    .main .nav-main .hamburger-container:hover span{  
+        background:var(--primary)
+    }
+    .main .nav-main .menu-container{
+        position: absolute;
+        top: 60px;  
+        width: 100%;  
+        height: 100px;
+        line-height: 30px; 
+        display: grid;
+        transform: scale(1, 0); 
+        transform-origin: top; 
+    }
+    .main .menu-container li:nth-child(5), 
+    .main  .menu-container li:nth-child(6), 
+    .main  .menu-container li:nth-child(7){
+   display: none;
+    }
+  
+}
+/*Tablet/Mobile Large*/
+@media (max-width:768px){
+
+}
+/*Mobile*/
+@media (max-width:576px){
+
+}
