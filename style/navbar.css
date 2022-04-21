@@ -8,6 +8,9 @@
     display: flex;
     height: 120px; 
     align-items: center;  
+    background: #000; 
+    z-index: 4;
+    grid-row: 1/2;
 }
 .main .nav-main .logo-container{
     flex: 1;
@@ -18,12 +21,14 @@
 }
 .main .nav-main .menu-container{
     display: flex;
-    align-items: center;   
+    align-items: center; 
+    justify-content: center;  
 }
 .main .nav-main .menu-container.show {
    transform: scale(1,1);
-   transition: 0.5s;
-    
+   transition: 0.5s;   
+   transform-origin: top;
+   margin-top: 40px; 
 }
 .main  .menu-container li a{
     font-size: 18px;
@@ -80,12 +85,22 @@ a{
 }
 /*Tablet*/
 @media (max-width:992px){
+    .main .product-section {
+        min-height: 130vh;
+        background: url(/assets/products-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-rows: 150px 1fr;
+    }
     .main .nav-main{
         position: fixed;
         width: 100%;
         height: 120px;
         margin: 0; 
-        display: grid; 
+        display: grid;  
+        border-bottom: 1.5px solid var(--primaryhover); 
         grid-template-rows: 120px; 
     }
     .main .nav-main .logo-container{
@@ -99,7 +114,9 @@ a{
     .main .nav-main .menu-container li a::after{
        all: unset;
     }
-   
+    .main .nav-main .hamburger-container{ 
+       margin-right: 30px;
+    }
     .main .nav-main .hamburger-container span{ 
         display: flex;
         align-items: center;  
@@ -130,9 +147,52 @@ a{
 }
 /*Tablet/Mobile Large*/
 @media (max-width:768px){
-
+    .main .product-section {
+        min-height: 240vh;
+        background: url(/assets/products-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-rows: 150px 1fr;
+    }
+    .main .nav-main .logo-container{
+        flex: 1; 
+        padding: 0;
+        margin: 0 90px;
+        align-items: center; 
+        cursor: pointer; 
+    }
 }
 /*Mobile*/
 @media (max-width:576px){
 
+}
+@media (max-width:512px){
+    
+    .main .nav-main{ 
+        display: flex;
+        height: 120px; 
+        align-items: center;  
+    }
+    .main .nav-main .logo-container{
+        flex: 1; 
+        padding: 0;
+        margin: 0 40px;
+        align-items: center; 
+        cursor: pointer; 
+    }
+    .main .nav-main .logo-container .hamburger-container{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .main .nav-main .logo-container{
+        flex: 1; 
+        padding: 0;
+        margin: 0 10px;
+        align-items: center; 
+        cursor: pointer; 
+    }
 }
