@@ -1,4 +1,4 @@
-   
+/* hamburger menu*/ 
 $(document).ready(function(){$("#hamburger").on('click', function(){
 if($( "#menus" ).hasClass( "show" )){
 $("#menus").removeClass( "show" );
