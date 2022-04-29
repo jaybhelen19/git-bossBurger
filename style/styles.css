@@ -2,8 +2,9 @@
 /*variables*/
 :root{
     --primary:#dac404;
-    --primaryhover:#dac5046e;
+    --primaryhover:#dac5046e; 
 }
+
 html, body{
     margin: 0;
     padding: 0; 
@@ -15,6 +16,7 @@ html, body{
     font-family: 'Roboto', sans-serif;
     color: #ffff;
 } 
+
 .main{
     height: 100vh;
     display: grid;
@@ -24,6 +26,7 @@ html, body{
     background: #000;
     box-sizing: border-box;
 } 
+
 
  /*---start of navbar section----*/
 .main .nav-main{
@@ -526,18 +529,7 @@ a{
     text-transform: uppercase;
     color: #ffff;
 }
-.main .product-section .products-list .product:hover > .burger-container,
-.main .product-section .products-list .product:hover > .burger-container-2,
-.main .product-section .products-list .product:hover > .burger-container-3,
-.main .product-section .products-list .product:hover > .burger-container-4,
-.main .product-section .products-list .product:hover > .burger-container-5,
-.main .product-section .products-list .product:hover > .burger-container-6,
-.main .product-section .products-list .product:hover > .price-container,
-.main .product-section .products-list .product:hover > .price2-container,
-.main .product-section .products-list .product:hover > .price3-container,
-.main .product-section .products-list .product:hover > .price4-container,
-.main .product-section .products-list .product:hover > .price5-container,
-.main .product-section .products-list .product:hover > .price6-container{
+.main .product-section .products-list .product:hover > .megs-burger{
     opacity: 0;
     transition: all 300ms ease; 
 }
